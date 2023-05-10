@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -20,14 +21,28 @@
                     <li><a class="nav__link" href="#">Contact</a></li>
                     <li><a class=" nav__link nav__link--primary" href="#">Books</a></li>
                 </ul>
+           
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+                    <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Books</a></li>
+                    <li class="menu__list "><a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
+                </ul>
             </div>
+        </div>
         </nav>
         <header>
             <div class="header__container">
                 <div class="header__description">
                     <h1>The United States most popular online library platform</h1>
                     <h2>Find your dream book with <span class="header__description--purple">Library</span></h2>
-                    <button class="btn">Browse Books</button>
+                   <a href="#features"> <button class="btn">Browse Books</button></a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="assets/Undraw_Books.svg" alt="">
@@ -280,9 +295,11 @@
         </section>
         <section id="explore">
             <div class="explore__container">
-                <div class="explore__row">
+                <div class=" row explore__row">
                     <h2 class="explore__header">Explore more <span class="purple">books</span></h2>
-                    <button class="btn explore__btn">Browse books</button>
+                    <a href="#features">
+                        <button class="btn explore__btn">Browse books</button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -296,9 +313,9 @@
                     </figure>
                 </a>
                 <div class="footer__list">
-                    <a href="" class="footer__link">Home</a>
-                    <a href="" class="footer__link no-cursor">About</a>
-                    <a href="" class="footer__link">Books</a>
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link no-cursor">About</a>
+                    <a href="#features" class="footer__link">Books</a>
                     <a href="" class="footer__link no-cursor">Contact</a>
                 </div>
                 <div class="footer__copyright">
